@@ -1,0 +1,56 @@
+.splash-screen-main {
+    background-image: url(../../Assets/SplashBackground.webp);
+}
+
+.splash-video {
+    clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%);
+    min-height: 100vh;
+    max-height: 100vh;
+    user-select: none;
+    pointer-events: none;
+}
+
+.splash-screen-content {
+    background-color: rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 767px) {
+    .splash-screen-main {
+        background-color: black;
+        height: 100vh;
+    }
+
+    .splash-video {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        clip-path: none;
+        height: 100vh;
+    }
+
+    .splash-content {
+        position: fixed;
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc((100vh / 16 * 9) - 32px);
+        max-width: calc(100vw - 32px);
+        height: calc(100vh - 32px);
+        z-index: 2;
+        background-color: #ffffffbb;
+        border-radius: 10px;
+    }
+
+    .splash-content {
+        padding: 0 !important;
+    }
+
+    .splash-content .videonest-text {
+        display:block;
+    }
+
+    .splash-content button {
+        margin-bottom: 1rem;
+    }
+}

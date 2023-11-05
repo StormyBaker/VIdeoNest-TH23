@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hh6PlQf6W6rqYD9y9VvcwVxVIqJCNraLvf32ecriZzU=",
+  "Source": "VideoNestServer",
+  "BasePath": "_content/VideoNestServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

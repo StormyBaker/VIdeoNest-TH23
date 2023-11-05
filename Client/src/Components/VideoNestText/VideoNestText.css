@@ -1,0 +1,55 @@
+.videonest-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.75rem;
+    letter-spacing: -3px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.videonest-text.navbar:hover {
+    cursor: pointer;
+}
+
+.videonest-text p.navbar {
+    font-size: 1.5rem;
+}
+
+.videonest-text.left {
+    justify-content: left;
+}
+
+.videonest-text.right {
+    justify-content: left;
+}
+
+.videonest-text p {
+    display: inline-block;
+    margin: 0;
+}
+
+.videonest-text p > span {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.videonest-text p.navbar > span {
+    font-size: 2rem;
+}
+
+.videonest-text .tagline {
+    font-size: 18px;
+    letter-spacing: normal;
+    text-transform: none;
+    margin-top: -10px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 490px) {
+    .videonest-text:not(.navbar) {
+        display: block;
+        text-align: center;
+    }
+}

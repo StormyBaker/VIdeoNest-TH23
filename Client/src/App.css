@@ -1,0 +1,25 @@
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.p-message .p-message-wrapper {
+  padding: 0.25rem 0.75rem !important;
+}
+
+.p-message-summary {
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+.p-avatar.p-avatar-circle {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

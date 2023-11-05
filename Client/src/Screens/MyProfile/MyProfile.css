@@ -1,0 +1,53 @@
+.hidden-file-input {
+    display: none;
+}
+
+.profile-edit-main input:disabled,
+.profile-edit-main textarea:disabled {
+    background-color: lightgray !important;
+}
+
+.profile-picture {
+    position: relative;
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.profile-picture.editable::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: #1e1e1e00;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.profile-picture.editable:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: all;
+    cursor: pointer;
+    background-color: #1e1e1e77;
+}
+
+.profile-picture.editable:hover::before {
+    position: absolute;
+    content: 'Choose Photo';
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    pointer-events: none;
+}
